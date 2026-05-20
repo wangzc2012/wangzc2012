@@ -10,7 +10,8 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-
+        permissions:
+            contents: write  # 添加写权限
         steps:
             - name: Checkout
               uses: actions/checkout@v2.3.4
